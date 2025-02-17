@@ -7,31 +7,67 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Spotify Clone</title>
   <style>
-    /* .top {
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+    body {
+      font-family: 'Poppins';
+    }
+
+    .header {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      width: 100%;
+      height: 100px;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      background-color: white;
     }
 
     nav {
-      position: fixed;
-      justify-content: end;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
 
-    } */
+    #logo {
+      height: 40px;
+      margin-right: 60rem;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+
+    li {
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
   </style>
 </head>
 
 <body>
-  <div class="top">SPOTIFY LOGO
-    <nav>
-      <ul>
-        <li><a href="#">Premium</a></li>
-        <li><a href="#">Discover</a></li>
-        <li><a href="#">Help</a> </li>
-        <li><a href="#">Download</a></li>
-      </ul>
-    </nav>
-  </div>
+  <header>
+    <div class="header">
+      <nav>
+        <span>
+          <img src="images/spotify-logo.png" alt="Spotify logo" id="logo">
+        </span>
+        <ul>
+          <li><a href="#">Premium</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
 
   <div>
     <h1>Music for everyone.</h1>
