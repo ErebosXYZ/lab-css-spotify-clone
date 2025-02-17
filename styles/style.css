@@ -6,3 +6,131 @@ Green: #00B172
 White: #FFF
 
 */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+  font-family: 'Poppins';
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /* justify content distribueix els elements horitzontalment */
+  justify-content: space-between;
+  /* alinear els continguts verticalment amb align items */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  padding: 0 20px;
+  /* padding per donar espai als costats */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* amplada perquè ocupi el necessari, marge dreta per alinear la navbar a la dreta */
+#logo {
+  width: 120px;
+  margin-right: 60rem;
+}
+
+/* ul flex pq els elements no s'apilin, gap per distanciar els elements entre ells */
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* Fer desapareixer punts dels li */
+li {
+  display: flex;
+}
+
+/* Links sense subrallar ni negre */
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.cover {
+  background-image: url("../images/landing.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Posicionament absolut per centrar el text vertical i horitzontalment */
+.section1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: white;
+  height: 100%;
+}
+.section1__header {
+  font-size: 300%;
+}
+.section1__p {
+  text-align: center;
+}
+
+/* Cada div ocupa un terç del contenidor */
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;  
+}
+.section2__div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  align-items: center;
+  padding: 20px;
+
+}
+#sound__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 180px;
+  overflow: hidden;
+  margin: 0px 150px;
+  height: auto;
+}
+#high__quality {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 200px;
+  overflow: hidden;
+  margin: 0px 150px;
+  height: auto;
+}
+#devices {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 200px;
+  overflow: hidden;
+  margin: 0px 150px;
+  height: auto;
+}
+.section2__header {
+  color: #1AB26B;
+  text-align: center;
+}
+.section2__div img {
+  width: auto;
+  height: auto;
+  margin-bottom: 15px;
+}
