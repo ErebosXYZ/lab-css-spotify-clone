@@ -98,6 +98,10 @@ a {
   padding: 20px;
 
 }
+.section2__h2 {
+  text-align: center;
+  font-size: xx-large;
+}
 #sound__icon {
   display: flex;
   justify-content: center;
