@@ -1,12 +1,12 @@
-
-
 /*/* ------------HEADER------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 * {
   box-sizing: border-box;
+  margin: 0%;
 }
+
 body {
   font-family: 'Poppins';
 }
@@ -58,7 +58,7 @@ a {
   font-size: 16px;
 }
 
-/* ------------SECTION1------------------- */
+/* ------------hero------------------- hero section, concretament hero image: una imatge de fons amb poc text i potser un botó*/
 
 
 .cover {
@@ -71,7 +71,7 @@ a {
 }
 
 /* Posicionament absolut per centrar el text vertical i horitzontalment */
-.section1 {
+.hero {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -80,24 +80,26 @@ a {
   /* height: 100%; */
 }
 
- 
-.section1__header {
+
+.hero__header {
   font-size: 300%;
 }
-.section1__p {
+
+.hero__p {
   text-align: center;
 }
 
-/* ------------SECTION2------------------- */
+/* ------------features------------------- */
 /* Cada div ocupa un terç del contenidor */
-.section2 {
+.features {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  text-align: center;  
+  text-align: center;
 }
-.section2__div {
+
+.features__div {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -106,32 +108,36 @@ a {
   padding: 20px;
 
 }
-.section2__h2 {
+
+.features__h2 {
   text-align: center;
   font-size: xx-large;
 }
+
 #sound__icon {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 180px;
   overflow: hidden;
   margin: 0px 150px;
   height: auto;
 }
+
 #high__quality {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 200px;
   overflow: hidden;
   margin: 0px 150px;
   height: auto;
 }
+
 #devices {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 200px;
   overflow: hidden;
   margin: 0px 150px;
@@ -139,39 +145,54 @@ a {
 }
 
 /* Max width 100% perquè sinó apareix scroll horitzontal */
-#sound__icon, #high__quality, #devices {
+#sound__icon,
+#high__quality,
+#devices {
   max-width: 100%;
   margin: 0 auto;
 }
-.section2__header {
+
+.features__header {
   color: #1AB26B;
   text-align: center;
 }
-.section2__div img {
+
+.features__div img {
+  display: flex;
   width: auto;
   height: auto;
   margin-bottom: 15px;
+ 
 }
 
-/* /* ------------SECTION3------------------- */
-.section3 {
-  background-color: #1AB26B;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* /* ------------ACTIONS------------------- */
 
-}
-
-#spotify__white {
-  display: flex;
-  width: 10vh;
-  justify-content: center;
-  align-items: center;
-  justify-content: center; 
-  align-items: center; 
-  height: auto; 
-}
-.text {
-  text-align: left;
+.actions {
   color: white;
+  background-color: #1AB26B;
+  padding: 3rem;
+  background: #1AB26B url(../images/spotify-app.jpg) no-repeat 90% center / 200px;
+  position: relative;
+
+}
+
+.actions__title {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+
+.actions>article {
+  margin-top: 3rem;
+  width: 50%;
+  max-width: 300px;
+}
+
+.spotify-icon {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
