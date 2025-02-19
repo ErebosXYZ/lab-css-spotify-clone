@@ -11,6 +11,7 @@ body {
   font-family: 'Poppins';
 }
 
+
 .header {
   display: flex;
   width: 100%;
@@ -30,6 +31,7 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
+  box-sizing: inherit;
 }
 
 /* amplada perquè ocupi el necessari, marge dreta per alinear la navbar a la dreta */
@@ -72,10 +74,13 @@ a {
 .section1 {
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 50%;
   color: white;
-  height: 100%;
+  transform: translateX(-50%);
+  /* height: 100%; */
 }
+
+ 
 .section1__header {
   font-size: 300%;
 }
@@ -132,6 +137,12 @@ a {
   margin: 0px 150px;
   height: auto;
 }
+
+/* Max width 100% perquè sinó apareix scroll horitzontal */
+#sound__icon, #high__quality, #devices {
+  max-width: 100%;
+  margin: 0 auto;
+}
 .section2__header {
   color: #1AB26B;
   text-align: center;
@@ -146,18 +157,21 @@ a {
 .section3 {
   background-color: #1AB26B;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
 }
 
 #spotify__white {
   display: flex;
   width: 10vh;
-  height: 10vh;
   justify-content: center;
   align-items: center;
+  justify-content: center; 
+  align-items: center; 
+  height: auto; 
 }
 .text {
-  float: left;
+  text-align: left;
   color: white;
 }
